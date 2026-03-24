@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The 20-20-20 Rule: Expert Eye Care Guide</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #0d9488;
+            --primary-dark: #0f766e;
+            --secondary: #1e293b;
+            --bg: #f8fafc;
+            --card-white: #ffffff;
+            --text-main: #334155;
+            --text-head: #0f172a;
+            --accent-soft: #f0fdfa;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', system-ui, -apple-system, sans-serif;
+            background-color: var(--bg);
+            color: var(--text-main);
+            line-height: 1.7;
+        }
+
+        nav {
+            background: white;
+            padding: 1.5rem 2rem;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+            display: flex;
+            justify-content: flex-start;
+        }
+
+        .back-btn {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            color: var(--primary);
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 0.95rem;
+            transition: transform 0.2s;
+        }
+
+        .back-btn:hover {
+            transform: translateX(-4px);
+        }
+
+        .hero {
+            background: linear-gradient(135deg, #0d9488 0%, #065f46 100%);
+            color: white;
+            padding: 5rem 2rem;
+            text-align: center;
+        }
+
+        .hero-content {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .hero h1 {
+            font-size: 2.5rem;
+            font-weight: 800;
+            line-height: 1.2;
+            margin-bottom: 1.5rem;
+        }
+
+        .hero p {
+            font-size: 1.1rem;
+            opacity: 0.9;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .article-container {
+            max-width: 850px;
+            margin: -3rem auto 5rem;
+            background: white;
+            padding: 4rem;
+            border-radius: 24px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.05);
+        }
+
+        h2 {
+            color: var(--text-head);
+            font-size: 1.8rem;
+            font-weight: 700;
+            margin: 3rem 0 1.5rem;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        h2::before {
+            content: '';
+            display: block;
+            width: 4px;
+            height: 1.8rem;
+            background: var(--primary);
+            border-radius: 4px;
+        }
+
+        p {
+            margin-bottom: 1.5rem;
+            font-size: 1.05rem;
+        }
+
+        .why-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1.5rem;
+            margin: 2.5rem 0;
+        }
+
+        .why-card {
+            background: var(--accent-soft);
+            padding: 2rem;
+            border-radius: 16px;
+            border: 1px solid #ccfbf1;
+            text-align: center;
+        }
+
+        .why-card h3 {
+            color: var(--primary-dark);
+            font-size: 1.1rem;
+            margin-bottom: 0.75rem;
+            font-weight: 700;
+        }
+
+        .why-card p {
+            font-size: 0.9rem;
+            margin: 0;
+            line-height: 1.5;
+        }
+
+        .tips-box {
+            background: #f1f5f9;
+            padding: 2.5rem;
+            border-radius: 20px;
+            margin: 3rem 0;
+        }
+
+        .tips-box h3 {
+            margin-bottom: 1.5rem;
+            color: var(--text-head);
+        }
+
+        .tips-list {
+            list-style: none;
+        }
+
+        .tips-list li {
+            position: relative;
+            padding-left: 2rem;
+            margin-bottom: 1rem;
+            font-size: 0.95rem;
+        }
+
+        .tips-list li::before {
+            content: '✓';
+            position: absolute;
+            left: 0;
+            color: var(--primary);
+            font-weight: 800;
+        }
+
+        footer {
+            text-align: center;
+            padding: 4rem 2rem;
+            border-top: 1px solid #e2e8f0;
+            color: #94a3b8;
+            font-size: 0.9rem;
+        }
+
+        @media (max-width: 768px) {
+            .article-container {
+                padding: 2rem;
+                margin-top: 0;
+                border-radius: 0;
+            }
+
+            .why-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .hero h1 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <nav><a href="index.html" class="back-btn">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path d="M19 12H5M12 19l-7-7 7-7" />
+            </svg>
+            <strong>OpticBreak20</strong> &mdash; Back to App
+        </a>
+    </nav>
+    <header class="hero">
+        <div class="hero-content">
+            <h1>The 20-20-20 Rule for Eye Health: Does It Really Work?</h1>
+            <p>Expert eye specialists provide preventive care tips to protect and maintain your vision in today's
+                digital age.</p>
+        </div>
+    </header>
+    <main class="article-container">
+        <section>
+            <h2>What Exactly is Digital Eye Strain?</h2>
+            <p>Digital eye strain is a group of eye-related problems resulting from prolonged use of computers, tablets,
+                and smartphones. When we look at screens, we tend to <b>blink 50% less</b> than normal. Blinking spreads
+                crucial tears across the eye surface; without it, our eyes become dry, irritated, and fatigued.</p>
+        </section>
+        <section>
+            <h2>What is the 20-20-20 Rule?</h2>
+            <p>The 20-20-20 rule is a simple yet effective guideline recommended by ophthalmologists to reduce the
+                effects of digital eye strain. For every <b>20 minutes spent looking at a screen</b>, look at something
+                <b>20 feet away</b> for at least <b>20 seconds</b>.
+            </p>
+
+            <div class="why-grid">
+                <div class="why-card">
+                    <h3>20 Minutes</h3>
+                    <p>Prevents over-exertion and allows muscles to relax before strain builds up.</p>
+                </div>
+                <div class="why-card">
+                    <h3>20 Feet</h3>
+                    <p>Allows the ciliary muscles inside your eyes to reach "optical infinity" and reset.</p>
+                </div>
+                <div class="why-card">
+                    <h3>20 Seconds</h3>
+                    <p>The minimum time required for eye muscles to fully relax and restart natural blinking.</p>
+                </div>
+            </div>
+        </section>
+        <section>
+            <h2>Additional Tips for Eye Comfort</h2>
+            <p>While the 20-20-20 rule is highly effective, combining it with these strategies will maximize your eye
+                comfort:</p>
+            <div class="tips-box">
+                <ul class="tips-list">
+                    <li><strong>Optimize Workspace:</strong> Position your screen about 20-25 inches (arm's length)
+                        away.</li>
+                    <li><strong>Adjust Screen Settings:</strong> Match screen brightness to your room's lighting and
+                        increase text size.</li>
+                    <li><strong>Minimize Glare:</strong> Use an anti-glare filter or position your monitor away from
+                        direct window light.</li>
+                    <li><strong>Use Artificial Tears:</strong> Lubricating eye drops can help relieve persistent
+                        dryness.</li>
+                    <li><strong>Stay Hydrated:</strong> Drinking water helps your entire body, including your eyes, stay
+                        hydrated.</li>
+                </ul>
+            </div>
+        </section>
+        <section>
+            <h2>When to Seek Medical Advice</h2>
+            <p>The 20-20-20 rule is excellent for managing mild strain. However, you should consult an eye specialist if
+                you experience chronic pain, sudden changes in vision, or persistent headaches that don't improve with
+                breaks.</p>
+        </section>
+    </main>
+    <footer>
+        Built to protect your eyes 👁️- Take care of yourself with OpticBreak20, by Siddhali_Kathar ✌️🙂
+    </footer>
+</body>
+
+</html>

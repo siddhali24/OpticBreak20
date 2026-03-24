@@ -1,0 +1,23 @@
+{
+  "name": "Eye Break: 20-20-20 Rule",
+  "short_name": "Eye Break",
+  "description": "Protect your eyes from digital fatigue with the 20-20-20 rule reminder.",
+  "start_url": ".",
+  "display": "standalone",
+  "background_color": "#0a101e",
+  "theme_color": "#6366f1",
+  "icons": [
+    {
+      "src": "icons/image.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "icons/image.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}

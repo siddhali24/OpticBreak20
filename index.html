@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Eye Break: Follow the 20-20-20 rule to protect your eyes from digital fatigue." />
+    <title>Eye Break: 20-20-20 Rule</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+    <link rel="manifest" href="manifest.json" />
+</head>
+
+<body>
+    <nav class="top-brand">OpticBreak20</nav>
+
+    <header class="hero">
+        <h1>The <span class="highlight">20-20-20</span> Rule</h1>
+        <p class="hero-sub">Your simple daily habit to fight digital eye strain and keep your vision sharp.</p>
+    </header>
+
+    <section class="cards">
+        <div class="card">
+            <div class="card-icon">⏱️</div>
+            <h3>Every 20 Minutes</h3>
+            <p>Take a break from your screen every 20 minutes of continuous use.</p>
+        </div>
+        <div class="card">
+            <div class="card-icon">👀</div>
+            <h3>Look 20 Feet Away</h3>
+            <p>Focus your eyes on something at least 20 feet (6 meters) away.</p>
+        </div>
+        <div class="card">
+            <div class="card-icon">🕐</div>
+            <h3>For 20 Seconds</h3>
+            <p>Hold your gaze for at least 20 seconds to fully relax the eye muscles.</p>
+        </div>
+    </section>
+    <section class="why">
+        <h2>Why It Matters</h2>
+        <div class="why-grid">
+            <div class="why-item"><span>😵‍💫</span>
+                <p>Reduces <strong>Eye Strain</strong></p>
+            </div>
+            <div class="why-item"><span>🧠</span>
+                <p>Improves <strong>Focus</strong></p>
+            </div>
+            <div class="why-item"><span>💧</span>
+                <p>Encourages <strong>Hydration</strong></p>
+            </div>
+            <a href="info.html" class="why-item study-more"><span>📚</span>
+                <p><strong>Study More</strong> &rarr;</p>
+            </a>
+        </div>
+    </section>
+    <section class="timer-section-container">
+        <div class="timer-box">
+            <p class="timer-label">Next break in</p>
+            <div id="timer" class="timer-display">20:00</div>
+            <div class="button-row">
+                <button id="startBtn">▶ Start Timer</button>
+                <button id="stopBtn" class="btn-secondary">■ Stop</button>
+            </div>
+        </div>
+
+        <div class="instructions-box">
+            <h3>Optimize Your Experience</h3>
+            <ul>
+                <li>🔊 <strong>Keep volume up</strong> for the alarm</li>
+                <li>🔔 <strong>Allow notifications</strong> in browser</li>
+                <li>🚫 <strong>Turn off DND</strong> (Do Not Disturb)</li>
+                <li>📲 <button id="pwaInstallBtn" class="btn-pwa">Install App Now</button></li>
+            </ul>
+        </div>
+    </section>
+    <footer>
+        <p>Built to protect your eyes 👁️- Take care of yourself with OpticBreak20, by Siddhali_Kathar ✌️🙂</p>
+    </footer>
+    <div id="popup" class="popup hidden">
+        <div class="popup-box">
+            <div class="popup-icon">🧘</div>
+            <h2>Time for a Break!</h2>
+            <div id="breakTimer" class="break-timer">20</div>
+            <p class="break-subtitle"> seconds to reset your vision</p>
+            <div class="popup-tips">
+                <div class="tip">👀 <span>Look 20 feet away.</span></div>
+                <div class="tip">💧 <span>Hydrate yourself; drink some water.</span></div>
+                <div class="tip">🧘 <span>Stretch your neck, shoulders & back.</span></div>
+            </div>
+            <div class="popup-actions">
+                <button id="dismissBtn" disabled>Please wait 20s...</button>
+            </div>
+        </div>
+    </div>
+    <div id="floatingTimer" class="floating">20:00</div>
+
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.2/dist/confetti.browser.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
