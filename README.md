@@ -32,8 +32,4 @@ If you're running this project locally for development:
 3.  **Access in Browser**:
     Open [http://localhost:8000](http://localhost:8000)
 
-    ```
-
----
-
 ## 📜 share this tool to help others stay healthy!
