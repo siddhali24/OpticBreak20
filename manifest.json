@@ -1,6 +1,6 @@
 {
-  "name": "Eye Break: 20-20-20 Rule",
-  "short_name": "Eye Break",
+  "name": "OpticBreak20_SK",
+  "short_name": "OpticBreak20",
   "description": "Protect your eyes from digital fatigue with the 20-20-20 rule reminder.",
   "start_url": ".",
   "display": "standalone",
